@@ -37,8 +37,11 @@ print(can_be_applied)
 # Continue working in your data_types_and_variables.py file. Use the following code to follow the instructions below
 username = 'codeup'
 password = 'notastrongpassword'
-pass_char_min = True
-user_char_max = True
-pass_not_user = True
+pass_char_min = len(password) > 5
+pass_char_min
+user_char_max = len(username) <= 20
+user_char_max
+pass_not_user = username != password
+pass_not_user
 
 
