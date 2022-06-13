@@ -1,4 +1,4 @@
-## 1. a.  
+## 1. a.  prompt the user for a day of the week, print out whether the day is Monday or not
 day_of_the_week = input("Enter the day of the week: ")
 print(day_of_the_week)
 if day_of_the_week.lower == 'monday':
@@ -6,7 +6,7 @@ if day_of_the_week.lower == 'monday':
 else:
     print('no, today is not monday')
 
-## 1. b.
+## 1. b. prompt the user for a day of the week, print out whether the day is a weekday or a weekend
 day_of_the_week = input("Enter the day of the week: ")
 print(day_of_the_week)
 if day_of_the_week.lower == 'saturday':
@@ -24,12 +24,21 @@ elif day_of_the_week.lower == 'thursday':
 else:
     print('week day')
 
-## 1. c.
-weekly_hours_worked = 40
-hourly_rate = 20
-week_paycheck = weekly_hours_worked * hourly_rate
-print(week_paycheck, 'dollars')
+## 1. c. create variables and make up values for, the number of hours worked in one week, the hourly rate, how much the week's paycheck will be
+## write the python code that calculates the weekly paycheck. You get paid time and a half if you work more than 40 hours
+hours_worked = 45
+hourly_rate = 50
+overtime_rate = hourly_rate * 1.5
 
+if hours_worked <=40:
+    total_pay = hours_worked * hourly_rate
+    
+else:
+    regular_pay = 40 * hourly_rate
+    overtime_pay = (hours_worked - 40) * overtime_rate
+    total_pay = regular_pay + overtime_pay
+
+total_pay
 
 ## 2. a. 
 i = 5
@@ -116,4 +125,15 @@ while pos_no > 0:
 while pos_no > 1:
     print(pos_no)
     pos_no -= 1
-    
+
+## 3. 
+fizz_buzz_list = range(1, 101)
+for i in fizz_buzz_list:
+    if (i % 3 == 0) and (i % 5 == 0):
+        print('fizzbuzz')
+    elif i % 3 == 0:
+        print('fizz')
+    elif i % 5 == 0:
+        print('buzz')
+    else:
+        print(i)
